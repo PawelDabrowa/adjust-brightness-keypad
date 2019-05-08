@@ -1,6 +1,9 @@
 const divSahdow = document.querySelector('body');
 divSahdow.style.backgroundColor = 'rgb(100, 100, 100)';
 
+const progressBar = document.querySelector('.hr-line');
+progressBar.style.right = '122.5px';
+
 x = 100;
 y = 100;
 z = 100;
@@ -21,6 +24,7 @@ const arrowUpKey = () => {
     x += 3;
     y += 3;
     z += 3;
+    progressBar.style.right = `${x}px`
     divSahdow.style.backgroundColor = `rgb(${x}, ${z}, ${y}`;
     h2.textContent = 'Click arrow up or down to change background color';
     h2.style.color = 'white';
@@ -30,6 +34,7 @@ const arrowDownKey = () => {
     x -= 3;
     y -= 3;
     z -= 3;
+    progressBar.style.right = `${x}px`
     divSahdow.style.backgroundColor = `rgb(${x}, ${z}, ${y}`;
     h2.textContent = 'Click arrow up or down to change background color';
     h2.style.color = 'black';
