@@ -18,7 +18,6 @@ const changeTitle = () => {
 }
 
 const arrowUpKey = () => {
-    console.log('work');
     x += 3;
     y += 3;
     z += 3;
@@ -28,7 +27,6 @@ const arrowUpKey = () => {
 }
 
 const arrowDownKey = () => {
-    console.log('no work');
     x -= 3;
     y -= 3;
     z -= 3;
